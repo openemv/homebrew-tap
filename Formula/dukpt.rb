@@ -17,7 +17,11 @@ class Dukpt < Formula
   end
 
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args, "-DBUILD_SHARED_LIBS=YES", "-DCMAKE_REQUIRE_FIND_PACKAGE_tr31=YES"
+    system "cmake", "-S", ".", "-B", "build",
+      *std_cmake_args,
+      "-DBUILD_SHARED_LIBS=YES",
+      "-DCMAKE_INSTALL_RPATH=#{rpath}",
+      "-DCMAKE_REQUIRE_FIND_PACKAGE_tr31=YES"
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
