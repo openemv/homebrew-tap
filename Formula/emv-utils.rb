@@ -6,6 +6,7 @@ class EmvUtils < Formula
 
   depends_on "cmake" => :build
   depends_on "pkgconfig" => :build
+  depends_on "boost"
   depends_on "iso-codes"
   depends_on "json-c"
   depends_on "pcsc-lite"
