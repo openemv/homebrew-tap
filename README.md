@@ -10,7 +10,7 @@ Or `brew tap openemv/tap` and then `brew install <formula>`.
 
 * [tr31](https://github.com/openemv/tr31): `brew install openemv/tap/tr31`
 * [dukpt](https://github.com/openemv/dukpt): `brew install openemv/tap/dukpt`
-* [emv-utils](https://github.com/openemv/emv-utils): `brew install --HEAD openemv/tap/emv-utils`
+* [emv-utils](https://github.com/openemv/emv-utils): `brew install openemv/tap/emv-utils`
 
 ## Documentation
 
@@ -18,4 +18,4 @@ Or `brew tap openemv/tap` and then `brew install <formula>`.
 
 ## Copyright
 
-Copyright (c) 2022 [Leon Lynch](https://github.com/leonlynch).
+Copyright (c) 2022, 2023 [Leon Lynch](https://github.com/leonlynch).
