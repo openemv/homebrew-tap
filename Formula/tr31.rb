@@ -1,8 +1,8 @@
 class Tr31 < Formula
   desc "ASC X9 TR-31 library and tools"
   homepage "https://github.com/openemv/tr31"
-  url "https://github.com/openemv/tr31/releases/download/0.4.5/tr31-0.4.5-src.tar.gz"
-  sha256 "afc84da2f9ebd999d786ff01368b11c20984b71e3addcc70453407f26370d41c"
+  url "https://github.com/openemv/tr31/releases/download/0.4.6/tr31-0.4.6-src.tar.gz"
+  sha256 "91e121ce056a6930652d8e260a4fac4f5adf125af916324db45913586893ef58"
   license "LGPL-2.1-or-later"
   head "https://github.com/openemv/tr31.git", branch: "master"
 
