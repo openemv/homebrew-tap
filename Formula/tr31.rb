@@ -1,8 +1,8 @@
 class Tr31 < Formula
   desc "Key block library and tools for ANSI X9.143, ASC X9 TR-31 and ISO 20038"
   homepage "https://github.com/openemv/tr31"
-  url "https://github.com/openemv/tr31/releases/download/0.5.0/tr31-0.5.0-src.tar.gz"
-  sha256 "4c03649f3a536910aaa70113106a0f13d10e0e645772734ab553d52e351b3f0e"
+  url "https://github.com/openemv/tr31/releases/download/0.5.1/tr31-0.5.1-src.tar.gz"
+  sha256 "025508cd561ad73a10003102e0854de7e602c4e6aab3af592169ff46766ac66c"
   license "LGPL-2.1-or-later"
   head "https://github.com/openemv/tr31.git", branch: "master"
 
