@@ -1,8 +1,8 @@
 class Dukpt < Formula
   desc "ANSI X9.24 DUKPT libraries and tools"
   homepage "https://github.com/openemv/dukpt"
-  url "https://github.com/openemv/dukpt/releases/download/1.1.0/dukpt-1.1.0-src.tar.gz"
-  sha256 "6bcce2507b8a2eb337e6690b2ac6fba4d772b24811c064fb0451f8968c5f6533"
+  url "https://github.com/openemv/dukpt/releases/download/1.1.1/dukpt-1.1.1-src.tar.gz"
+  sha256 "38cb38fd503d2486be3438cfd01c08c9a27bfcf6833c39692b975ccf49ae94b1"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-or-later"]
   head "https://github.com/openemv/dukpt.git", branch: "master"
 
@@ -31,10 +31,16 @@ class Dukpt < Formula
     if OS.mac?
       # Create dukpt-ui symlink in bin directory
       bin.install_symlink prefix/"Dukpt.app/Contents/MacOS/Dukpt" => "dukpt-ui"
-
-      # For Dukpt to appear in Launchpad, do this:
-      # ln -s $(brew --prefix dukpt)/Dukpt.app /Applications/
     end
+  end
+
+  def caveats
+    return unless OS.mac?
+
+    <<~EOS
+      For Dukpt to appear in Launchpad, do this:
+      ln -s $(brew --prefix dukpt)/Dukpt.app /Applications/
+    EOS
   end
 
   test do
