@@ -1,0 +1,23 @@
+##############################################################################
+# Copyright 2023 Leon Lynch
+#
+# This file is licensed under the terms of the LGPL v2.1 license.
+# See LICENSE file.
+##############################################################################
+
+name: Formula tests
+
+on: [push]
+
+jobs:
+  formula-tests:
+    strategy:
+      matrix:
+        formula: [ tr31, dukpt, emv-utils ]
+
+    name: openemv/tap/${{ matrix.formula }}
+    runs-on: macos-latest
+
+    steps:
+    - name: Install openemv/tap/${{ matrix.formula }}
+      run: brew install openemv/tap/${{ matrix.formula }}
