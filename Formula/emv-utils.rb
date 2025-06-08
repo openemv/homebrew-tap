@@ -1,8 +1,8 @@
 class EmvUtils < Formula
   desc "EMV libraries and tools"
   homepage "https://github.com/openemv/emv-utils"
-  url "https://github.com/openemv/emv-utils/releases/download/0.2.2/emv-utils-0.2.2-src.tar.gz"
-  sha256 "204ba981e3e131eb7e46d45510a0befebd885a9a3f4ef52b622e1783ad12840b"
+  url "https://github.com/openemv/emv-utils/releases/download/0.2.3/emv-utils-0.2.3-src.tar.gz"
+  sha256 "26c342d8eacef7764011bc8c8827e0d02f66cda6b8752cf49e7ae955436188e5"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-or-later"]
   head "https://github.com/openemv/emv-utils.git", branch: "master"
 
