@@ -1,8 +1,8 @@
 class Dukpt < Formula
   desc "ANSI X9.24 DUKPT libraries and tools"
   homepage "https://github.com/openemv/dukpt"
-  url "https://github.com/openemv/dukpt/releases/download/1.2.3/dukpt-1.2.3-src.tar.gz"
-  sha256 "d64aac52a1cad0d9cea00a728bde1b3f4a6c200cade530d522de62566621fd4d"
+  url "https://github.com/openemv/dukpt/releases/download/1.2.4/dukpt-1.2.4-src.tar.gz"
+  sha256 "929f139a103ddd042aa5c513a96d8b62eb6f5d7eb8fee3c7e41ddc5ea16be2d1"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-or-later"]
   head "https://github.com/openemv/dukpt.git", branch: "master"
 
