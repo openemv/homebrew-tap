@@ -1,5 +1,5 @@
 ##############################################################################
-# Copyright 2023 Leon Lynch
+# Copyright 2023, 2025 Leon Lynch
 #
 # This file is licensed under the terms of the LGPL v2.1 license.
 # See LICENSE file.
@@ -7,16 +7,21 @@
 
 name: Formula tests
 
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: '0 0 15 * *'
 
 jobs:
   formula-tests:
     strategy:
+      fail-fast: false
       matrix:
+        os: [ macos-15, macos-15-intel, macos-26 ]
         formula: [ tr31, dukpt, emv-utils ]
 
-    name: openemv/tap/${{ matrix.formula }}
-    runs-on: macos-latest
+    name: "${{ matrix.os }}: openemv/tap/${{ matrix.formula }}"
+    runs-on: ${{ matrix.os }}
 
     steps:
     - name: Install openemv/tap/${{ matrix.formula }}
