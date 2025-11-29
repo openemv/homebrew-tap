@@ -4,10 +4,11 @@ class Tr31 < Formula
   url "https://github.com/openemv/tr31/releases/download/0.6.5/tr31-0.6.5-src.tar.gz"
   sha256 "a9382b1e41fabb24a0d1549dc486875d78d59214396d0f2022c129893342c542"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-or-later"]
+  revision 1
   head "https://github.com/openemv/tr31.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "mbedtls"
+  depends_on "mbedtls@3"
   depends_on "bash-completion" => :recommended
   depends_on "doxygen" => :optional
 

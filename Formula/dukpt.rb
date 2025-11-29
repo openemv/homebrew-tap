@@ -4,10 +4,11 @@ class Dukpt < Formula
   url "https://github.com/openemv/dukpt/releases/download/1.2.5/dukpt-1.2.5-src.tar.gz"
   sha256 "2b4f060a3a0543a8ca222498bc8bdd5210dc07c2affe98e878a0b1f351af54f5"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-or-later"]
+  revision 1
   head "https://github.com/openemv/dukpt.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "mbedtls"
+  depends_on "mbedtls@3"
   depends_on "openemv/tap/tr31"
   depends_on "qt@5"
   depends_on "bash-completion" => :recommended
