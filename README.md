@@ -18,4 +18,4 @@ Or `brew tap openemv/tap` and then `brew install <formula>`.
 
 ## Copyright
 
-Copyright 2022-2025 [Leon Lynch](https://github.com/leonlynch).
+Copyright 2022-2026 [Leon Lynch](https://github.com/leonlynch).
