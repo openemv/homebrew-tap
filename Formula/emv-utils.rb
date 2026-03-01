@@ -1,10 +1,9 @@
 class EmvUtils < Formula
   desc "EMV libraries and tools"
   homepage "https://github.com/openemv/emv-utils"
-  url "https://github.com/openemv/emv-utils/releases/download/0.3.0/emv-utils-0.3.0-src.tar.gz"
-  sha256 "14bba9342a16ad5ec9649eeb81c23ef9e19fa4590577c097d871ce3340c10e5a"
+  url "https://github.com/openemv/emv-utils/releases/download/0.3.1/emv-utils-0.3.1-src.tar.gz"
+  sha256 "11ec8deebeddd304cec258b1db8e29c27ebad3b26d613807e3be4cca3a3866dc"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-or-later"]
-  revision 2
   head "https://github.com/openemv/emv-utils.git", branch: "master"
 
   depends_on "cmake" => :build
@@ -13,7 +12,6 @@ class EmvUtils < Formula
   depends_on "iso-codes"
   depends_on "json-c"
   depends_on "mbedtls@3"
-  depends_on "pcsc-lite"
   depends_on "qt@6"
   depends_on "bash-completion" => :recommended
   depends_on "doxygen" => :optional
