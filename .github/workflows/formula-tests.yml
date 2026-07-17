@@ -1,5 +1,5 @@
 ##############################################################################
-# Copyright 2023, 2025 Leon Lynch
+# Copyright 2023, 2025-2026 Leon Lynch
 #
 # This file is licensed under the terms of the LGPL v2.1 license.
 # See LICENSE file.
@@ -9,6 +9,8 @@ name: Formula tests
 
 on:
   push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 15 * *'
 
@@ -24,5 +26,11 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+    - name: Tap openemv/tap
+      run: brew tap openemv/tap
+
+    - name: Trust openemv/tap
+      run: brew trust openemv/tap
+
     - name: Install openemv/tap/${{ matrix.formula }}
       run: brew install openemv/tap/${{ matrix.formula }}
